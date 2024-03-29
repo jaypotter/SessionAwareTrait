@@ -1,0 +1,21 @@
+{
+    "name": "potter/session-aware-trait",
+    "description": "PHP Session Aware Trait",
+    "type": "library",
+    "require": {
+        "php": "^8.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Potter\\Session\\Aware\\": "src/Potter/Session/Aware/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jay Potter",
+            "email": "j@ypotter.ca"
+        }
+    ],
+    "minimum-stability": "dev"
+}
