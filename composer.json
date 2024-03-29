@@ -3,7 +3,9 @@
     "description": "PHP Session Aware Trait",
     "type": "library",
     "require": {
-        "php": "^8.3"
+        "php": "^8.3",
+        "potter/container-interface": "dev-main",
+        "potter/session-interface": "dev-main"
     },
     "license": "MIT",
     "autoload": {
