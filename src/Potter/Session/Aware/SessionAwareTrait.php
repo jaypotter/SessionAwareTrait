@@ -16,5 +16,17 @@ trait SessionAwareTrait
         return $this->getContainer()->get('session');
     }
     
+    final public function hasSession(): bool
+    {
+        return $this->getContainer()->has('session');
+    }
+    
+    final protected function setSession(SessionInterface $session): void
+    {
+        ($container = $this->getContainer())->set('session', $session);
+        $this->setContainer($container);
+    }
+    
     abstract public function getContainer(): ContainerInterface;
+    abstract protected function setContainer(ContainerInterface $container): void;
 }
