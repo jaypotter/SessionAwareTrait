@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Potter\Session\Aware;
 
-use \Potter\{
-    Container\ContainerInterface,
-    Session\SessionInterface
-};
+use \Psr\Container\ContainerInterface, \Potter\Session\SessionInterface;
 
 trait SessionAwareTrait 
 {
