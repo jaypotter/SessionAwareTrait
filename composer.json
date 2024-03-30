@@ -7,6 +7,15 @@
         "potter/session-interface": "dev-main",
         "psr/container": "^2.0@dev"
     },
+    "suggest": {
+        "potter/session-aware": "dev-main",
+        "potter/session-traits": "dev-main",
+        "potter/session": "dev-main",
+        "potter/aware-traits": "dev-main",
+        "potter/aware": "dev-main",
+        "potter/traits": "dev-main",
+        "potter/framework": "dev-main"
+    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
