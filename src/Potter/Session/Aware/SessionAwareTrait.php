@@ -22,7 +22,7 @@ trait SessionAwareTrait
     {
         $container = $this->getContainer();
         $container->set('session', $session);
-        $this->setContainer($container);
+        
     }
     
     final public function startSession(): void
@@ -32,7 +32,6 @@ trait SessionAwareTrait
             return;
         }
         $session->activate();
-        $this->setSession($session);
     }
     
     abstract public function getContainer(): ContainerInterface;
